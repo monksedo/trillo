@@ -1,0 +1,52 @@
+/* Color Theme Swatches in Hex */
+/*
+$bg-blue: #3E1EB3;
+$bg-darkblue: #0a0325;
+$bg-lightblue: #3612FF;
+$bg-btn: #FF8C2B;
+$green-light: #23CC29;
+$green-medium: #03B30A;
+$green-dark: #03B30A;
+*/
+
+
+:root {
+  --bg-blue: #3E1EB3;
+  --bg-darkblue: #0a0325;
+  --bg-lightblue: #3612FF;
+
+  --bg-btn: #FF8C2B;
+  --bg-btn-darkt: #e67518;
+
+  --green-light: #23CC29;
+  --green-medium: #03B30A;
+  --green-dark: #03B30A;
+
+  // Font colors
+  --font-color: #f9f9f9;
+  --offwhite: #f3f3f3;
+  --offwhite1: #f0eeee;
+  --gray-light: #cccccc;
+
+  // Black & White
+  --white: #ffffff;
+  --black: #000000;
+
+  // Margin
+  --margin-01: 1rem;
+  --margin-02: 2rem;
+  --margin-03: 3rem;
+  --margin-large: 24rem;
+  --maring-mid: 12rem;
+  --margin-small: 6rem 
+
+  --padding-01: 1rem;
+  --padding-02: 2rem;
+  --padding-03: 3rem;
+  --padding-large: 25rem;
+  --padding-mid: 12rem;
+  --padding-small: 6rem;
+
+  // Box shadow
+  --bxshadow-large: 0 2rem 6rem rgba($black, .3);
+}

@@ -1,0 +1,25 @@
+.container {
+  max-width: 120rem;
+  margin: var(--margin-small) auto;
+  background-color: var(--offwhite);
+  box-shadow: var(--bxshadow-large);
+
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: var(--offwhite1);
+}
+
+.content {
+  height: 30rem;
+}
+
+.sidebar {
+  height: 30rem;
+}
+
+.hotel-view {
+  height: 30rem;
+}
