@@ -1,52 +1,27 @@
-/* Color Theme Swatches in Hex */
-/*
-$bg-blue: #3E1EB3;
-$bg-darkblue: #0a0325;
-$bg-lightblue: #3612FF;
-$bg-btn: #FF8C2B;
-$green-light: #23CC29;
-$green-medium: #03B30A;
-$green-dark: #03B30A;
-*/
+// Page Layout Colors
+$blue: #3e1eb3;
+$blue-light: #3612ff;
+$blue-dark:  #0c032e;
 
+$orange: #ff8c2b;
+$orange-dark: #eb6e08;
 
-:root {
-  --bg-blue: #3E1EB3;
-  --bg-darkblue: #0a0325;
-  --bg-lightblue: #3612FF;
+$green-light: #23cc29;
+$green-dark: #05b30a;
 
-  --bg-btn: #FF8C2B;
-  --bg-btn-darkt: #e67518;
+// Gray Colors
+$gray: #cccccc;
+$gray-medium: #807880;
+$gray-dark: #5e5e5e;
+$gray-light: #eeeeee;
+$gray-light1: #f7f7f7;
 
-  --green-light: #23CC29;
-  --green-medium: #03B30A;
-  --green-dark: #03B30A;
+$font-default: #fcfcfc;
 
-  // Font colors
-  --font-color: #f9f9f9;
-  --offwhite: #f3f3f3;
-  --offwhite1: #f0eeee;
-  --gray-light: #cccccc;
+// Black & White
+$black: #000000;
+$white: #ffffff;
 
-  // Black & White
-  --white: #ffffff;
-  --black: #000000;
-
-  // Margin
-  --margin-01: 1rem;
-  --margin-02: 2rem;
-  --margin-03: 3rem;
-  --margin-large: 24rem;
-  --maring-mid: 12rem;
-  --margin-small: 6rem 
-
-  --padding-01: 1rem;
-  --padding-02: 2rem;
-  --padding-03: 3rem;
-  --padding-large: 25rem;
-  --padding-mid: 12rem;
-  --padding-small: 6rem;
-
-  // Box shadow
-  --bxshadow-large: 0 2rem 6rem rgba($black, .3);
-}
+// Box Shadow
+$bxsh-large: 0 2rem 6rem rgba($black, .3);
+$bxsh-medium: 0 1rem 3rem rgba($black, .3);

@@ -1,25 +1,29 @@
 .container {
-  max-width: 120rem;
-  margin: var(--margin-small) auto;
-  background-color: var(--offwhite);
-  box-shadow: var(--bxshadow-large);
+  width: 90%;
+  margin: 8rem auto;
+  background-color: $gray-light;
+  box-shadow: $bxsh-large;
 
   min-height: 50rem;
 }
 
 .header {
   height: 7rem;
-  background-color: var(--offwhite1);
+  color: $white;
+  background-color: $gray-light1;
 }
 
 .content {
-  height: 30rem;
+  display: flex;
 }
 
 .sidebar {
-  height: 30rem;
+  background-color: $blue-dark;
+
+  flex: 0 0 18%; // Grow, shrink, bases
 }
 
-.hotel-view {
-  height: 30rem;
+.hotel {
+  background-color: $white;
+  flex: 1;
 }
