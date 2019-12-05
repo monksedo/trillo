@@ -1,5 +1,5 @@
 // Page Layout Colors
-$blue: #3e1eb3;
+$blue: #502dcf;
 $blue-light: #3612ff;
 $blue-dark:  #0c032e;
 
@@ -13,10 +13,10 @@ $green-dark: #05b30a;
 $gray: #cccccc;
 $gray-medium: #807880;
 $gray-dark: #5e5e5e;
-$gray-light: #eeeeee;
-$gray-light1: #f7f7f7;
+$gray-light: #dfdfdf;
+$gray-light1: #ececec;
+$gray-light2: #fcfcfc;
 
-$font-default: #fcfcfc;
 
 // Black & White
 $black: #000000;
@@ -25,3 +25,7 @@ $white: #ffffff;
 // Box Shadow
 $bxsh-large: 0 2rem 6rem rgba($black, .3);
 $bxsh-medium: 0 1rem 3rem rgba($black, .3);
+$bxsh-small: 0 2rem 5rem rgba($black, .08);
+
+// Border line
+$bd-line: 1px solid $gray-light1;

@@ -9,8 +9,12 @@
 
 .header {
   height: 7rem;
-  color: $white;
-  background-color: $gray-light1;
+  background-color: $white;
+  border-bottom: $bd-line;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -21,9 +25,34 @@
   background-color: $blue-dark;
 
   flex: 0 0 18%; // Grow, shrink, bases
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel {
   background-color: $white;
+  // height: 70rem; // for testing
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: $gray-light2;
+  border-bottom: $bd-line;
+}
+
+.description {
+  background-color: $white;
+  box-shadow: $bxsh-small;
+  flex: 0 0 60%;
+  padding: 3rem;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  background-color: orangered;
   flex: 1;
 }
