@@ -198,7 +198,6 @@
     width: 1.5rem;
     height: 1.5rem;
     fill: $orange;
-    
   }
 
   &__location {
@@ -212,19 +211,15 @@
     margin-right: .5rem;
   }
 
-  &__icon {
-  }
-
   &__rating {
     background-color: $blue;
-    color: $white;
+    color: $orange;
     padding: 0 2rem;
     align-self: stretch;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
   }
 
   &__rating-average {
@@ -237,7 +232,6 @@
     font-weight: 300;
     text-transform: uppercase;
   }
-
 }
 
 // Button inline
@@ -251,8 +245,17 @@
   cursor: pointer;
   transition: all .2s;
 
+  & span {
+    margin-left: 3px;
+    transition: all .2s;
+  }
+
   &:hover {
     color: $blue-light;
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -269,7 +272,7 @@
   }
 
   50% {
-    transform: sclale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 1rem 4rem rgba($black, .3);
   }
 
@@ -280,6 +283,10 @@
 }
 
 // Paragraph
+.detail {
+  letter-spacing: .1rem;
+}
+
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
 }
@@ -302,11 +309,159 @@
 
   &__item::before {
     content: "";
-    height: 2rem;
-    width: 2rem;
-    margin-right: .5rem;
-    background-image: url("../img/chevron-thin-right.svg");
+    display: inline-block;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: .8rem;
+    
+    // Older browers
+    // background-image: url("../img/chevron-thin-right.svg");
+    // background-size: cover;
+
+    // Newer browers - masks
+    background-color: $blue-dark;
+    mask-image: url("../img/chevron-thin-right.svg");
+    mask-size: cover;
   }
 }
 
 // Recommend
+.recommend {
+  font-size: 1.3rem;
+  color: $gray-dark;
+
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid $white;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
+
+// Reviews
+.review {
+  background-color: $white;
+  box-shadow: $bxsh-small;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__rating {
+    font-size: 2rem;
+    color: $orange;
+    margin-left: auto;
+  }
+
+  &__user-name {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+    color: $gray-medium;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -7rem;
+    left: -.5rem;
+    font-size: 18rem;
+    color: $gray-light;
+    font-family: sans-serif;
+  }
+}
+
+// Call to action
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 2rem 0;
+  }
+}
+
+// Call to action button
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, $blue-light, $blue);
+  color: $white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, $blue-light, $blue);
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulstate 1s infinite;
+  }
+}
