@@ -6,11 +6,15 @@
 
 // Search box
 .search {
-  
   flex: 0 0 40%;
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
+
+  @media only screen and (max-width: $media-500px) {
+    order: 1;
+    flex: 0 0 100%;
+  }
 
   &__input {
     font-family: inherit;
@@ -102,11 +106,24 @@
   list-style: none;
   margin-top: 2rem;
 
+   @media only screen and (max-width: $media-960px) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: .5rem;
+
+      @media only screen and (max-width: $media-960px) {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width: $media-960px) {
+      flex: 1;
     }
   }
 
@@ -144,6 +161,16 @@
 
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $media-960px) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $media-600px) {
+      flex-direction: column;
+      padding: 1rem .5rem;
+    }
   }
 
   &__icon {
@@ -151,6 +178,13 @@
     height: 2rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: $media-600px) {
+      margin-right: 0;
+      margin-bottom: .5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -160,6 +194,10 @@
   text-align: center;
   color: $gray;
   padding: 2rem;
+
+  @media only screen and (max-width: $media-960px) {
+    display: none;
+  }
 }
 
 // Gallery
@@ -186,6 +224,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1rem 3rem;
+
+    @media only screen and (max-width: $media-600px) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -220,17 +263,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: $media-600px) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 1.6rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $media-600px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
+
+     @media only screen and (max-width: $media-600px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -315,13 +370,18 @@
     margin-right: .8rem;
     
     // Older browers
-    // background-image: url("../img/chevron-thin-right.svg");
-    // background-size: cover;
+    background-image: url("../img/chevron-thin-right.svg");
+    background-size: cover;
 
     // Newer browers - masks
-    background-color: $blue-dark;
-    mask-image: url("../img/chevron-thin-right.svg");
-    mask-size: cover;
+    @supports (-webkit-mask-image: url()) or (mark-image: url()) {
+      background-color: $blue;
+      -webkit-mask-image: url("../img/chevron-thin-right.svg");
+      -webkit-mask-size: cover;
+      mask-image: url("../img/chevron-thin-right.svg");
+      mask-size: cover;
+      background-image: none;
+    }
   }
 }
 
@@ -337,6 +397,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -345,7 +409,7 @@
     border: 3px solid $white;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -357,6 +421,11 @@
   padding: 3rem;
   margin-bottom: 3rem;
   position: relative;
+
+  @media only screen and (max-width: $media-960px) {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
   
   &__text {
     position: relative;
@@ -409,6 +478,10 @@
   padding: 3.5rem 0;
   text-align: center;
 
+   @media only screen and (max-width: $media-960px) {
+    padding: 2rem 0;
+  }
+  
   &__book-now {
     font-size: 1.6rem;
     font-weight: 300;
