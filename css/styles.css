@@ -632,6 +632,7 @@ body {
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 56.25em) {
