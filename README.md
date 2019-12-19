@@ -15,7 +15,7 @@ I have change the color scheme for this project to practice some color design id
 To see the original design color scheme please visite [udemy.com](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859774#overview) website for more detail.
 
 ### What I can do after this training?
-After finish the training course, I am able to understand all the concepts and now able to design and code very high quality and most beatifull web/app front and fill confident to produce many challenging realworld  frontend projects.
+After finish the training course, I am able to understand all the concepts and now able to design and code very high quality and most beautifull web/app fronted and I am confident to produce many challenging realworld frontend projects for business organizations or personal website. 
 
 ## View the website
 [Click to run](https://monksedo.github.io/trillo/)
