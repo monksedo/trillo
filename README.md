@@ -11,7 +11,12 @@ Course Designer/Instructor/Developer: Jonas Schmedtmann
 Student/Programmer: Chris Thanh Nguyen
 
 ### Note on project color theme
+I have change the color scheme for this project to practice some color design ideas.
+To see the original design color scheme please visite [udemy.com](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859774#overview) website for more detail.
 
-## Code Snippet
+## View the website
+[Click to run](https://monksedo.github.io/trillo/)
 
 ## Screenshot 
+### 
+![](img/trillo01.png)
