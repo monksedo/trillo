@@ -14,6 +14,9 @@ Student/Programmer: Chris Thanh Nguyen
 I have change the color scheme for this project to practice some color design ideas.
 To see the original design color scheme please visite [udemy.com](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859774#overview) website for more detail.
 
+### What I can do after this training?
+After finish the training course, I am able to understand all the concepts and now able to design and code very high quality and most beatifull web/app front and fill confident to produce many challenging realworld  frontend projects.
+
 ## View the website
 [Click to run](https://monksedo.github.io/trillo/)
 
